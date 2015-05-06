@@ -1,0 +1,148 @@
+body { 
+		background: #232323 url(images/bg.png) repeat;
+		margin: 0;
+		padding: 0;
+		font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+		
+		/* Make HTML 5 elements display block-level for consistent styling */  
+		header, nav, article, section, aside, footer, address {  
+    	display: block;  
+		} 
+		.wrapper {
+		width: 960px;
+		min-height: 720px;
+		margin: 0 auto;
+		text-align: center;
+		background: url(images/bg-light.png) no-repeat;
+		}
+		
+		.wrapper img {
+		width: 720px;
+		}
+		
+		/* Icones accueil */
+		#icon_login {
+			margin-top: 30px;
+		}
+		.icon_titre {
+			font-size: 16px;
+			text-transform: uppercase;
+			font-family: 'Open Sans',sans-serif;
+			color: white;
+			margin-top: 30px;
+			text-shadow: 2px 2px 15px #FFFFFF;
+			height: 30px;
+		}
+		#icon_login .fa {
+			-webkit-transition-duration: 0.8s;
+			-moz-transition-duration: 0.8s;
+			-o-transition-duration: 0.8s;
+			transition-duration: 0.8s;
+			-webkit-transition-property: -webkit-transform;
+			-moz-transition-property: -moz-transform;
+			-o-transition-property: -o-transform;
+			transition-property: transform;
+			overflow:hidden;
+		}
+		#icon_login .fa:hover {
+			-moz-transform: rotate(360deg);
+			-webkit-transform: rotate(360deg);
+			-o-transform: rotate(360deg);
+			-ms-transform: rotate(360deg);
+			transform: rotate(360deg);
+		}
+	
+		a{ color: #77dff1; text-decoration: none;}
+		
+		h1 {
+		text-transform: uppercase;
+		color: #77dff1;
+		font-family: 'Open Sans';
+		font-size: 80px;
+		font-weight: lighter;
+		text-shadow: 0px 2px 0px #000;
+		margin: 30px 0 0 0;
+		}
+		
+		h2 {
+		text-transform: uppercase;
+		color: #77dff1;
+		font-family: 'Open Sans';
+		font-size: 24px;
+		font-weight: lighter;
+		text-shadow: 0px 2px 0px #000;
+		margin: 15px 0 15px 20px;
+		text-align: left;
+		}
+		
+		p {
+		color: #fff;
+		margin: 0;
+		font-size: 16px;
+		text-shadow: 0 -2px 0 #000;
+		}
+		
+		.hr {
+		display: block;
+		border: none;
+		width: 960px;
+		height: 2px;
+		background: url(images/divider.png);
+		margin: 10px 0;
+		}
+		
+		.clear {
+		clear: both;
+		}
+		
+		.progress {
+		height: 110px;
+		margin: 35px 0;
+		background: url(images/progress-container.png) no-repeat;
+		position: relative;
+		}
+		
+		.txt-launch-day-hat {
+		background: url(images/txt-launch-day-hat.png) no-repeat;
+		width: 117px;
+		height: 159px;
+		position: absolute;
+		top: -120px;
+		right: -45px;
+		}
+		
+		.txt-launch-day {
+		background: url(images/txt-launch-day.png) no-repeat;
+		width: 112px;
+		height: 110px;
+		position: absolute;
+		top: -80px;
+		right: -40px;
+		}
+		
+		.progress-bar {
+		height: 43px;
+		background: #72dbf1 url(images/progress-bar.png) repeat-x;
+		position: absolute;
+		top:14px;
+		left: 0px;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		}
+		
+		.progress-bar-container {
+		width: 930px;
+		height: 70px;
+		margin-left: 13px;
+		position: relative;
+		}
+		
+		.tipsy { margin-bottom: 0px; font-size: 18px; opacity: 0.8; filter: alpha(opacity=80); background-repeat: no-repeat;  background-image: url(images/tipsy.png); font-family: 'Open Sans'; text-transform: uppercase;  }
+  		.tipsy-inner { padding: 10px 20px; background-color: black; color: white; max-width: 400px; text-align: right; -webkit-box-shadow: 0 20px 15px rgba(0,0,0,0.5); -moz-box-shadow: 0 20px 15px rgba(0,0,0,0.5);   }
+  		.tipsy-inner { -moz-border-radius:5px; -webkit-border-radius:5px; }
+  		.tipsy-north { background-position: top center; }
+  		.tipsy-south { background-position: bottom center; }
+  		.tipsy-east { background-position: right center; }
+  		.tipsy-west { background-position: left center; }
+  		.tipsy-container { border: 1px solid green;}
