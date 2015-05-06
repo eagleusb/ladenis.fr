@@ -10,10 +10,12 @@
 
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<!-- <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.4/superhero/bootstrap.min.css" rel="stylesheet"> -->
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="//fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 	<link href="//fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
+	<!-- <link rel="stylesheet" type="text/css" href="http://cdn.knightlab.com/libs/timeline/latest/css/timeline.css"> -->
 
 	<!-- SCRIPTS -->
 
@@ -21,6 +23,7 @@
 	<script src="js/jquery-1.10.2.min.js"></script>
 	<script src="js/jquery-migrate-1.2.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> -->
 	<script src="js/jquery.easing.1.3.js"></script>
 	<script src="js/script.js"></script>
 	<script type="text/javascript" src="http://cdn.knightlab.com/libs/timeline/latest/js/storyjs-embed.js"></script>
@@ -55,7 +58,24 @@
 	var lis = $('.nav > li');
 	menu_focus( lis[0], 1 );
 	});
-	</script>
+</script>
+
+<!-- timelineJs  -->
+
+<script>
+    $(document).ready(function() {
+        createStoryJS({
+            type:       				'timeline',
+            width:      				'100%',
+            height:     				'400',
+            source:     				'include/ladenis-timeline.json',
+            embed_id:   				'ladenis-timeline',
+						font:               'Bevan-PotanoSans',
+						lang:               'fr',
+						maptype:            'watercolor'
+        });
+    });
+</script>
 
 </head>
 
@@ -74,7 +94,7 @@
 				<ul class="nav row">
 					<li data-slide="1" class="col-12 col-sm-3"><a id="menu-link-1" href="#slide-1" title="Next Section"><span class="icon fa fa-home"></span> <span class="text">ACCUEIL</span></a></li>
 					<li data-slide="2" class="col-12 col-sm-3"><a id="menu-link-2" href="#slide-2" title="Next Section"><span class="icon fa fa-user"></span> <span class="text">A PROPOS</span></a></li>
-					<li data-slide="3" class="col-12 col-sm-3"><a id="menu-link-3" href="#slide-3" title="Next Section"><span class="icon fa fa-briefcase"></span> <span class="text">CLIENTS</span></a></li>
+					<li data-slide="3" class="col-12 col-sm-3"><a id="menu-link-3" href="#slide-3" title="Next Section"><span class="icon fa fa-briefcase"></span> <span class="text">REFERENCES</span></a></li>
 					<li data-slide="4" class="col-12 col-sm-3"><a id="menu-link-4" href="#slide-4" title="Next Section"><span class="icon fa fa-envelope"></span> <span class="text">CONTACT</span></a></li>
 				</ul>
 
@@ -86,28 +106,39 @@
 		</div><!-- /.container -->
 	</div><!-- /.navbar -->
 
-	<!-- Slide 1 - Accueil -->
-	<div class="slide" id="slide-1" data-slide="1">
-		<div class="container">
+<!-- Slide 1 - Accueil -->
 
-			<div id="home-row-1" class="row clearfix">
-				<div class="col-12">
-					<div class="logo"><img src="images/logo.png" alt="Leslie-Alexandre Denis - Consultant Informatique"></div>
-					<a target="_blank" class="regular-link" href="https://www.infogreffe.fr/societes/entreprise-societe/800458663-denis-leslie-alexandre-80045866300013.html"><h4>SIRET 800 458 663 00013</h4></a>
-				</div><!-- /col-12 -->
-			</div><!-- /row -->
-	<!-- Logos -->
+<div class="slide" id="slide-1" data-slide="1">
+	<div class="container">
+		<div id="home-row-1" class="row clearfix">
+			<div class="col-12">
+				<div class="logo"><img src="images/logo.png" alt="Leslie-Alexandre Denis - Consultant Informatique"></div>
+				<a target="_blank" class="regular-link" href="https://www.infogreffe.fr/societes/entreprise-societe/800458663-denis-leslie-alexandre-80045866300013.html"><h4>SIRET 800 458 663 00013</h4></a>
+			</div><!-- /col-12 -->
+		</div><!-- /row -->
 
-			<div id="home-row-2" class="row clearfix">
-				<div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="2"><span class="fa fa-4x fa-cogs" style="color: #2888ff;"></span></div><span>SYSTEME</span></div>
-				<div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="2"><span class="fa fa-4x fa-retweet" style="color: #159a83;"></span></div><span>RESEAU</span></div>
-				<div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="2"><span class="fa fa-4x fa-eye" style="color: #d0b23b;"></span></div><span>WEB</span></div>
-			</div><!-- /row -->
+<!-- Logos -->
 
-		</div><!-- /container -->
-	</div><!-- /slide1 -->
+	<div id="home-row-2" class="row clearfix">
+		<div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="2"><span class="fa fa-4x fa-cogs" style="color: #2888ff;"></span></div><span>SYSTEME</span></div>
+		<div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="2"><span class="fa fa-4x fa-retweet" style="color: #159a83;"></span></div><span>RESEAU</span></div>
+		<div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="2"><span class="fa fa-4x fa-eye" style="color: #d0b23b;"></span></div><span>WEB</span></div>
+	</div><!-- /row -->
 
-	<!-- Slide 2 - A Propos -->
+	</div><!-- /container -->
+</div><!-- /slide1 -->
+
+<!-- timelineJs Slide  -->
+<!--
+<div class="slide">
+	<div class="container">
+		<div class="row clearfix">
+			<div id="ladenis-timeline"></div>
+		</div>
+	</div>
+</div>
+-->
+<!-- Slide 2 - A Propos -->
 	<div class="slide" id="slide-2" data-slide="2">
 		<div class="container-fluid">
 
